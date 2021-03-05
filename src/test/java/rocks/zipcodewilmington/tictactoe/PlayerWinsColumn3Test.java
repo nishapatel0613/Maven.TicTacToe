@@ -15,8 +15,8 @@ public class PlayerWinsColumn3Test {
     public void setup() {
         // Given
         this.board = new Board(new Character[][]{
-                {' ', 'O', 'X'},
-                {' ', ' ', 'X'},
+                {'X', 'O', 'X'},
+                {'O', ' ', 'X'},
                 {' ', 'O', 'X'}
         });
     }
