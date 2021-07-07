@@ -15,7 +15,7 @@ public class PlayerTies1Test {
     public void setup() {
         // Given
         this.board = new Board(new Character[][]{
-                {'X', 'O', 'X'},
+                {'O', 'O', 'O'},
                 {'O', 'O', 'X'},
                 {'X', 'X', 'O'}
         });
@@ -24,7 +24,7 @@ public class PlayerTies1Test {
     @Test
     public void getWinnerTest() {
         // Given
-        String expectedWinner = "";
+        String expectedWinner = "Winner is X";
 
         // When
         String actualWinner = board.getWinner();
@@ -38,7 +38,7 @@ public class PlayerTies1Test {
     @Test
     public void isInFavorOfPlayerOTest() {
         // Given
-        Boolean expected = false;
+        Boolean expected = true;
 
         // When
         Boolean actual = board.isInFavorOfO();
@@ -63,7 +63,7 @@ public class PlayerTies1Test {
     @Test
     public void isTieTest() {
         // Given
-        Boolean expected = true;
+        Boolean expected = false;
 
         // When
         Boolean actual = board.isTie();

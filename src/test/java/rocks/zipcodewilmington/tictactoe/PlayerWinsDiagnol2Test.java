@@ -51,7 +51,7 @@ public class PlayerWinsDiagnol2Test {
     @Test
     public void isInFavorOfPlayerXTest() {
         // Given
-        Boolean expected = true;
+        Boolean expected = false;
 
         // When
         Boolean actual = board.isInFavorOfX();
@@ -63,7 +63,7 @@ public class PlayerWinsDiagnol2Test {
     @Test
     public void isTieTest() {
         // Given
-        Boolean expected = false;
+        Boolean expected = true;
 
         // When
         Boolean actual = board.isTie();

@@ -24,7 +24,7 @@ public class PlayerWinsRow3Test {
     @Test
     public void getWinnerTest() {
         // Given
-        String expectedWinner = "O";
+        String expectedWinner = "X";
 
         // When
         String actualWinner = board.getWinner();

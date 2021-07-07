@@ -17,7 +17,7 @@ public class PlayerWinsDiagnol1Test {
         this.board = new Board(new Character[][]{
                 {'O', ' ', 'X'},
                 {' ', 'O', 'X'},
-                {' ', ' ', 'O'}
+                {' ', ' ', 'X'}
         });
     }
 
@@ -38,7 +38,7 @@ public class PlayerWinsDiagnol1Test {
     @Test
     public void isInFavorOfPlayerOTest() {
         // Given
-        Boolean expected = true;
+        Boolean expected = false;
 
         // When
         Boolean actual = board.isInFavorOfO();
@@ -51,7 +51,7 @@ public class PlayerWinsDiagnol1Test {
     @Test
     public void isInFavorOfPlayerXTest() {
         // Given
-        Boolean expected = false;
+        Boolean expected = true;
 
         // When
         Boolean actual = board.isInFavorOfX();
